@@ -1,0 +1,360 @@
+*
+{
+    box-sizing: border-box;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    text-decoration: none;
+  
+  
+}
+body
+{
+      line-height: 1.5;
+      transition: all 0.3s ease-out;
+      font-family: 'Courier New', Courier, monospace;
+}
+
+.title_logo
+{
+    color: red;
+    font-family: Coming 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+/* utilities for all pages */
+.red_fixed
+{
+   background-color: red;
+   border: solid white 2px;
+}
+.btn
+{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    background: black;
+    color: rgb(255, 229, 80);
+    cursor: pointer;
+}
+.btn:hover
+{
+    background: white;
+    color: rgba(255, 0, 0);
+}
+.btn_light
+{
+    display: inline-block;
+    width: 20%;
+    padding: 5px;
+    margin: 20px 68px;
+    background: #333;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border:none;
+}
+/*.btn_light:hover
+{
+    background: #f1f1f1;
+    color: #333;
+}
+*/
+/* start header */
+header
+{
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header
+{
+    display: flex;
+    flex-direction: column;
+  
+}
+header nav 
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+header nav #login
+{
+    align-self:flex-end;
+    text-transform: uppercase;
+    padding: 10px;
+    border: solid 1px red;
+    color: white;
+}
+
+header nav ul 
+{
+    display:flex;
+    
+}
+header nav ul li 
+{
+    margin: 5px;
+    padding: 5px;
+    text-transform: uppercase;  
+}
+a
+{
+    color: white;
+}
+/* navtwo */
+header li
+{
+     border: solid 1px red;
+     color:white;
+     padding: 10px;
+     border-radius: 5px;
+     margin: 10px;
+     cursor: pointer;
+}
+.navtwo ul
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    background-color: #333;
+}
+
+/* Start section about me */
+main
+{
+   background: #f1f1f1;
+   display: flex;
+   justify-content:space-around;
+   margin: 40px 0px;
+   min-height: 400px;
+}
+
+main div:first-child
+{
+    margin:60px 20px;
+}
+main .showcase-content 
+{
+    text-align: center;
+    width: 600px;
+}
+main .showcase-content p
+{
+  
+  padding: 5px;
+ 
+}
+main .showcase-content h3
+{
+    margin: 5px;
+}
+.showcase_image
+{
+    display: block;
+    max-width: 400px;
+}
+
+.image
+{
+    background: url("portfolio3.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;   
+
+}
+/* End section about me */
+
+/* footer */
+footer
+{
+    background:#333;
+    height: 35vh;
+}
+
+footer ul 
+{
+   display: flex;
+   justify-content: space-around;
+}
+footer ul div
+{
+    margin-top: 70px;
+}
+.imageFooter
+{
+    background: url("html5.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15vh;
+    width: 15vh; 
+    
+}
+footer li
+{
+     border: solid 1px red;
+     color:white;
+     padding: 10px;
+     border-radius: 5px;
+     margin: 10px;
+     cursor: pointer;
+     text-align: center;
+}
+footer ul li:hover
+{
+    background-color: #111;
+}
+
+/* sub footer */
+.sub_footer
+{
+    background: rgb(0, 0, 0,0.9);
+    color:white;
+    /* font-size:small; */
+    font-family: cursive;
+}
+span
+{
+   color: red;
+}
+
+/* Start social media */
+
+.fa-instagram 
+{
+  text-align: center;
+  border-radius: 40px;
+  color: white;
+  background: #555;
+  cursor: pointer;
+}
+.fa-facebook-square
+{
+  border-radius: 40px;
+  background: #555;
+  cursor: pointer;
+  color:white;
+}
+
+.fab
+{
+    padding:8px;
+    margin: 3px; 
+}
+.fab:hover
+{
+    background: red;
+    color: white;
+}
+/* End social media */
+
+/* End Home Page  */
+
+
+/* Start section cards Unit 1-2 */
+.container
+{
+    width:1100px;
+    margin: auto; 
+}
+.container h1
+{
+    text-align: center;
+    margin: 10px 20px;
+}
+.containers_cards 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card 
+{
+    width: 80%;
+    margin:40px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.card:hover
+{
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  border: 1px solid #cccccc;
+  background-color: #f1f1f1;
+}
+.card .card_content
+{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+.card img 
+{
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.2s ease-out;
+}
+/* End section cards Unit 1-2*/
+
+/* Start section cards Unit 3 up*/
+.topic_Title
+{
+    text-align: center;
+    margin: 15px 10px 0px 10px;
+}
+.topic_Title .line
+{
+    width: 200px;
+    height: 5px;
+    border-radius: 55%;
+    background: red;
+    margin: 5px auto 25px auto;
+}
+.topics p
+{
+    margin: 20px;
+    font-weight: 600;
+}
+.unit3_upto
+{
+    margin: 10px 20px 70px 20px;
+    
+}
+details
+{
+     border: 1px solid black;
+     margin-bottom: 10px;
+     padding: 10px;
+}
+summary
+{
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    cursor: pointer;  
+   
+}
+.far
+{
+    padding: 5px;
+    margin: 5px;
+    background: #333;
+    border-radius: 5px;
+    color: red;
+}
+/* End section cards Unit 3 up*/
+
+
+
+
+ 
